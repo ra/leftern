@@ -7,9 +7,7 @@ This tracks the data in RRDtool.
 
 1.  Run pollup once by hand ignoring the error.
 
-2.  ```shell
-    cut -d ' ' -f 1 grab | cut -c6-9 > id
-    ```
+2.  ``` cut -d ' ' -f 1 grab | cut -c6-9 > id ```
 
 3.  Edit file 'id' to remove the first two lines, and any stations you
     do not care about. The left columns in 'grab' are the only key.
