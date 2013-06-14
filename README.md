@@ -3,7 +3,7 @@ station? When did station z go to 0 bikes or 0 docks?
 
 This tracks the data in RRDtool.
 
-0.  Install RRDtool.
+0.  Install RRDtool, perhaps.
 
 1.  Run pollup once by hand ignoring the error.
 
@@ -22,6 +22,6 @@ This tracks the data in RRDtool.
 
 8.  Wait more.
 
-9.  Go to 7.
+9.  Go to 8.
 
 
