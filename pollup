@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Citi Bike JSON to RRDtool
+
+# cron needs this
+WD=/home/rick/Desktop/cb
+
+curl -s http://citibikenyc.com/stations/json | tr "},{" "  \n" > $WD/grab
+head -2 $WD/grab | tail -1 | cut -c18-39 > $WD/date
+DATE=$(date --date="`cat $WD/date`" +%s) # probably doesn't work on OS X as is
+
+for i in `cat $WD/id` ; do
+
+  BIKE=$(grep \"id\":$i $WD/grab | cut -d : -f 10 | cut -d ' ' -f 1)
+  DOCK=$(grep \"id\":$i $WD/grab | cut -d : -f 4 | cut -d ' ' -f 1)
+
+  rrdtool update $WD/s$i.rrd $DATE:$BIKE:$DOCK 
+
+done
+
+# echo $DATE >> $WD/log
+
+
+
