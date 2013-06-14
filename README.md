@@ -5,6 +5,8 @@ This tracks the data in RRDtool.
 
 0.  Install RRDtool, perhaps.
 
+1.  Set WD in pollup to something handy.
+
 1.  Run pollup once by hand ignoring the error.
 
 2.  ``` cut -d ' ' -f 1 grab | cut -c6-9 > id ```

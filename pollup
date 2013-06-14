@@ -3,7 +3,7 @@
 # Citi Bike JSON to RRDtool
 
 # cron needs this
-WD=/home/rick/Desktop/cb
+WD=/home/someone/something
 
 curl -s http://citibikenyc.com/stations/json | tr "},{" "  \n" > $WD/grab
 head -2 $WD/grab | tail -1 | cut -c18-39 > $WD/date
