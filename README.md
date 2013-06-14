@@ -1,5 +1,5 @@
-Is that Citi Bike station dead? When were bikes shifted to that
-station? When did station z go to 0 bikes or 0 docks?
+Is that Citi Bike station dead? When were bikes shifted to _that_
+station? When did station _z_ go to 0 bikes or 0 docks?
 
 This tracks the data in RRDtool.
 
@@ -12,7 +12,8 @@ This tracks the data in RRDtool.
 2.  ``` cut -d ' ' -f 1 grab | cut -c6-9 > id ```
 
 3.  Edit file 'id' to remove the first two lines, and any stations you
-    do not care about. The left columns in 'grab' are the only key.
+    do not care about. (Runs fine with all stations on any contemporary
+    machine.) The left columns in 'grab' are the only key.
 
 4.  Run massrd.
 
@@ -24,6 +25,6 @@ This tracks the data in RRDtool.
 
 8.  Wait more.
 
-9.  Go to 8.
+9.  Go to 9.
 
 
