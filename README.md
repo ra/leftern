@@ -3,7 +3,7 @@ station? When did station _z_ go to 0 bikes or 0 docks?
 
 This tracks the data in RRDtool.
 
-![](https://raw.github.com/ra/leftern/master/s521.png)
+![](http://dada.nfshost.com/leftern/s521.png)
 
 (the largest station, called _8 Ave & W 31 St,_ just west of Penn
 Station on the evening of 6/15/2013)
