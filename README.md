@@ -16,7 +16,7 @@ Station on the evening of 6/15/2013)
 
 2.  ``` grep -v Planned grab | cut -d ' ' -f 1 | cut -c6-9 > id ```
 
-3.  Edit file 'id' to remove the first two lines, and any stations you
+3.  Edit file 'id' to remove any stations you
     do not care about. (Runs fine with all stations on any contemporary
     machine.) The left columns in 'grab' are the only key.
 
