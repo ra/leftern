@@ -3,13 +3,13 @@
 # Runs rrdcreate across all stations. Prepare station list using
 # cut -d ' ' -f 1 grab | cut -c6-9 > id 
 # and edit out, at least, the first two lines. --step 60 and run in
-# cron every minute. Haven't played with 0.5:1:24 and 0.5:6:10 yet.
+# cron every minute. 
 
 DATE=$(date --date="`cat date`" +%s)
 
 for i in `cat id` ; do
 rrdtool create s$i.rrd --start $DATE --step 60 DS:bikes:GAUGE:600:0:U \
-DS:docks:GAUGE:600:0:U RRA:AVERAGE:0.5:1:24 RRA:AVERAGE:0.5:6:10
+DS:docks:GAUGE:600:0:U RRA:AVERAGE:0.5:1:240 RRA:AVERAGE:0.5:12:360
 
 done
 

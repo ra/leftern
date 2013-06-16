@@ -6,7 +6,7 @@ WHERE=~/Desktop/tmp
 
 for i in `cat id` ; do
 
-  rrdtool graph $WHERE/s$i.png --start now-30m --end now DEF:b=s$i.rrd:bikes:AVERAGE \
+  rrdtool graph $WHERE/s$i.png --start now-30m --end now -l -2 -u 58 -r DEF:b=s$i.rrd:bikes:AVERAGE \
                DEF:d=s$i.rrd:docks:AVERAGE LINE2:b#88aadd:"bikes" LINE2:d#444444:"docks"
 
 done
