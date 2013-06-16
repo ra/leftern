@@ -1,9 +1,12 @@
-Is that Citi Bike station dead? When were bikes shifted to _that_
+Is that Citi Bike station dead? When were bikes shifted from _that_
 station? When did station _z_ go to 0 bikes or 0 docks?
 
 This tracks the data in RRDtool.
 
-![](http://direct_public_image_url)
+![](https://raw.github.com/ra/leftern/master/s521.png)
+
+(the largest station, called _8 Ave & W 31 St,_ just west of Penn
+Station on the evening of 6/15/2013)
 
 0.  Install RRDtool, perhaps.
 
@@ -29,7 +32,9 @@ This tracks the data in RRDtool.
 
 9.  Go to 9.
 
-If you recreate 'id' and new stations appear you'll see something like — ERROR: opening 's241.rrd': No such file or directory — when you run draw. Generate its RRD file by hand using the line from massrrd.
+If you recreate 'id' and new stations appear you'll see something like
+— ERROR: opening 's241.rrd': No such file or directory — when you run
+draw. Generate its RRD file by hand using the line from massrrd.
 
 
 
