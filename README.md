@@ -20,7 +20,7 @@ Station on the evening of 6/15/2013)
     do not care about. (Runs fine with all stations on any contemporary
     machine.) The left columns in 'grab' are the only key.
 
-4.  Run massrd.
+4.  Run massrrd.
 
 5.  Have pollup run every minute from cron.
 
